@@ -1,0 +1,12 @@
+out/
+__pycache__/
+*.pyc
+kaggle.json
+.env
+*.bak
+
+# application-specific / personal notes: kept locally, not published
+CLAUDE.md
+docs/PLAN.md
+docs/RESUME_BULLETS.md
+docs/INTERVIEW_PREP.md
