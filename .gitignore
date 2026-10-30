@@ -10,3 +10,14 @@ CLAUDE.md
 docs/PLAN.md
 docs/RESUME_BULLETS.md
 docs/INTERVIEW_PREP.md
+docs/instructions.md
+docs/claims_guard.md
+docs/project_whisper.md
+docs/skills_and_trims.md
+docs/jd_keywords.md
+docs/current_resume.md
+resume/
+scripts/compare_runs.py
+scripts/check_readme.py
+scripts/kaggle_run.sh
+docs/

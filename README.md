@@ -143,8 +143,6 @@ $env:KAGGLE_USERNAME = "<your-kaggle-username>"
 Rename-Item out\all out\run2                        # the analysis scripts read out\run1 / out\run2
 python scripts\make_report.py out\run2\results.json # results table + claim guard
 python scripts\bootstrap_ci.py run2                 # paired bootstrap CIs -> out\run2\BOOTSTRAP.md
-python scripts\compare_runs.py out\run1\results.json out\run2\results.json   # needs a second run saved as out\run1
-python scripts\check_readme.py                      # checks README numbers against results/ (or out/ if present)
 ```
 
 Drop `-Corti` to skip the corti evaluation. Results will vary a little from run to run (see the replicate above). `out/` is git-ignored;
@@ -154,9 +152,8 @@ Drop `-Corti` to skip the corti evaluation. Results will vary a little from run 
 
 ```
 kaggle/train.py        Kaggle script kernel: probe | baseline | all (config block at the top)
-scripts/               kaggle_run.ps1 (push/poll/download), make_report.py, bootstrap_ci.py, compare_runs.py, check_readme.py
+scripts/               kaggle_run.ps1 (push/poll/download), make_report.py, bootstrap_ci.py
 results/               run2 (canonical): RESULTS.md, results.json, BOOTSTRAP.md, ERROR_ANALYSIS.md; run1/ replicate
-docs/                  ERROR_ANALYSIS.md (same file as results/ERROR_ANALYSIS.md)
 ```
 
 ## License and data
